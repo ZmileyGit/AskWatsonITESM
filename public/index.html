@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Ask Watson</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/functions.js"></script>
+  </head>
+  <body style="">
+      <header>
+          <div style="" class="app-title">
+              Ask Watson
+          </div>
+      </header>
+      <div class="content main" style="">
+          <ul style="" class="option-list subjects">
+              <li style="">
+                  IoT
+              </li>
+              <li style="">
+                  Mobile
+              </li>
+              <li style="">
+                  Network
+              </li>
+              <li style="">
+                  Security
+              </li>
+              <li style="">
+                  Storage
+              </li>
+          </ul>
+          <div class="search-bar-container main" style="" data-top="80" data-limit="140">
+            <input id="question" type="text" style="" placeholder="Your Question"/>
+            <button id="send" type="button" style="">
+                <i class="material-icons" style="">search</i>   
+            </button>
+          </div>
+          <ul style="" class="option-list options">
+              <li style="" data-selected="1" data-container="answers">
+                  Answers
+              </li>
+              <li data-selected="0" data-container="evidence">
+                  Evidence
+              </li>
+          </ul>
+          <div style="" class="container" id="answers">
+              
+          </div>
+          <div class="container" id="evidence" style="display:none;">
+              
+          </div>
+      </div>
+      <div class="tile dummy">
+        <button class="title" style="" data-expanded="0">
+            <span style="" class="background">
+                
+            </span>
+            <span style="" class="name">
+                Answer X
+            </span>
+            <i style="" class="material-icons">keyboard_arrow_down</i>
+        </button>
+        <div style="" class="body">
+            Text
+        </div>
+        <div class="footer" style="">
+            <span class="note" style="">
+                Note
+            </span>
+            <ul class="option-list" style="">
+                <li style="" class="read">
+                    <i class="material-icons" style="">volume_up</i>
+                </li>
+                <li style="" class="translate" data-lang="en">
+                    <i class="material-icons" style="" data-lang="en">translate</i>
+                </li>
+            </ul>
+            <span class="original">
+                
+            </span>
+        </div>
+    </div>
+    <div class="audio-bar" style="">
+        <audio controls style=""></audio>
+        <button style="" onclick="closeBar(event);">
+            <i class="material-icons" style="">cancel</i>
+        </button>
+    </div>
+  </body>
+  
+</html>

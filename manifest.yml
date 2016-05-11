@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: AskWatsonITESM
+  host: askwatsonitesm
+  disk_quota: 1024M
+  services:
+  - Language Translation-AWITESM
+  - Text to Speech-AWITESM

@@ -1,0 +1,23 @@
+{
+	"name": "AskWatsonITESM",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+            "express": "4.12.x",
+            "ejs": "^1.0.0",
+            "cfenv": "1.0.x",
+            "body-parser": "*",
+            "request": "*",
+            "express-rate-limit": "^2.0.2",
+            "express-secure-only": "^0.2.1",
+            "helmet": "^2.0.0",
+            "watson-developer-cloud": "^1.0.6"
+	},
+	"repository": {},
+	"engines": {
+		"node": "4.x"
+	} 
+}
