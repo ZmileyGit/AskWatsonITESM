@@ -89,7 +89,7 @@ function askWatson(){
                 if(aparts[0] !== "${noAnswer}"){
                     var parts = aparts[1].split(":");
                     source = parts[0];
-                    body = parts[1];
+                    body = aparts[1];
                 }
                 var confidence = (answers[cont].confidence*100).toFixed(2);
                 tile.find("button.title").click(expandTile);
